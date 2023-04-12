@@ -40,3 +40,12 @@ li {
 .generated {
    margin-bottom: 1rem;
 }
+
+.alert {
+   width: 100%;
+   background-color: rgb(236, 137, 137);
+   color: red;
+   border-radius: 2rem;
+   padding: 2rem;
+   text-decoration: underline;
+}

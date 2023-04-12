@@ -14,6 +14,7 @@ createApp({
          url: 'https://flynn.boolean.careers/exercises/api/random/mail',
          mails: [],
          complete: false,
+         error: null,
       }
    },
    methods: {
@@ -27,7 +28,12 @@ createApp({
                   if (i == 10 - 1) {
                      this.complete = true;
                   }
-               });
+               }).catch(error => {
+                  console.error(error.message);
+                  this.error = error.message;
+               }) 
+
+               
          }
       }
    },
